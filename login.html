@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    <style type="text/css">
+        .container-fluid{
+            background-color: rgb(21, 112, 168);
+            text-align: center;
+        }
+        .u{
+            background-color: rgb(22, 120, 236 );
+            font-family: 'Courier New', Courier, monospace;
+            font-style: oblique;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <form action="pagina.php" method="post">
+    <div class="formulario">
+        <P class="u"><label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario"/></P>
+       
+        <P class="s"><label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha"/></P>
+ 
+        <P class="e">
+            <input type="submit" value="Entra"/>
+        </P>
+    </div>
+        </form>
+    </div>
+  </body>
+</html>
