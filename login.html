@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    <style type="text/css">
+        .container-fluid{
+            background-image: linear-gradient(45deg, rgb(12, 130, 209),rgb(21, 167, 21));
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       .formulario{
+        
+        top: 50%;
+        left: 50%;
+
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <form action="pagina.php" method="post">
+        <div class="formulario">
+        <h1>Login</h1>
+        <input type="text"  placeholder="Usuário ou E-mail" />
+            </br></br>
+        <input type="password" placeholder="Senha"/></P>
+            </br>
+       
+        <input type="submit" value="Entrar"/>  
+    </div>
+        </form>
+    </div>
+  </body>
+</html>
