@@ -8,30 +8,29 @@
    
     <style type="text/css">
         .container-fluid{
-            background-color: rgb(21, 112, 168);
+            background-image: linear-gradient(45deg, rgb(12, 130, 209),rgb(21, 167, 21));
             text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .u{
-            background-color: rgb(22, 120, 236 );
-            font-family: 'Courier New', Courier, monospace;
-            font-style: oblique;
-            
-        }
+       .formulario{
+        
+        top: 50%;
+        left: 50%;
+
+       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-        <form action="pagina.php" method="post">
-    <div class="formulario">
-        <P class="u"><label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" id="usuario"/></P>
+    <form action="pagina.php" method="post">
+        <div class="formulario">
+        <h1>Login</h1>
+        <input type="text"  placeholder="Usuário ou E-mail" />
+            </br></br>
+        <input type="password" placeholder="Senha"/></P>
+            </br>
        
-        <P class="s"><label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha"/></P>
- 
-        <P class="e">
-            <input type="submit" value="Entra"/>
-        </P>
+        <input type="submit" value="Entrar"/>  
     </div>
         </form>
     </div>
