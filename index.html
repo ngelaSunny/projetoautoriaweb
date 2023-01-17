@@ -11,26 +11,28 @@
     <style type="text/css">
 
 
-        *{
-        font-family: 'Anton', sans-serif;
-        background-color: darkseagreen;
-        color: black;
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-padding-top: 4rem;
-        scroll-behavior: smooth;
-        list-style: none;
-        text-decoration: none;
-        }
+    *{
+    font-family: 'Anton', sans-serif;
+    background-color: darkseagreen;
+    color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+        
+    }
 
-        :root
-        {
-        --main-color:#bc9667;
-        --second-color:#edeae3;
-        --text-color:#1b1b1b;
-        --bg-color:#fff;
-        }
+    :root
+    {
+    --main-color:darkseagreen;
+    --second-color:#385538;
+    --text-color:#1b1b1b;
+    --bg-color:#fff;
+    }
  
 
     header
@@ -47,10 +49,7 @@
     transition: 0.5s linear;
     }
 
-    .logo img
-    {
-    width: 150px;
-    }
+    
 
     .navbar
     {
@@ -68,7 +67,7 @@
 
     .navbar a:hover
     {
-    background: green ;
+    background: rgb(85, 204, 85) ;
     border-radius: 0.2rem;
     transform: 0.2 all linear;
     }
@@ -84,12 +83,12 @@
 
     .header-icon .bx
     {
-    color: var(--bg-color);
+    color: black;
     }
 
     .header-icon .bx:hover
     {
-    color: var(--main-color);
+    color:black;
     }
 
     #menu-icon
@@ -123,7 +122,7 @@
     outline: none;
     width: 100%;
     font-size: 1rem;
-    color: var(--main-color);
+    
     }
 
     .search-box input::placeholder
@@ -131,24 +130,42 @@
     font-size: 1rem;
     font-weight: 500;
     }
+    .principal{
+        margin-top: 80px;
+    }
+    
+    pom{
+        float: left;
+    }
+    .text{
+        float:right;
+    }
+    .rodape
+    {
+        color:black;
+        background-color: black;
+        text-align: center;
+    }
+    
     
 
     </style>
 </head>
 <body>
- 
-<div class="container">
+
     <header>
-        <a href="#" class="logo">
-             <img src="Floricultura_Flor-de-Liz-removebg-preview.png" alt="">
-        </a>
+    
+            <h2>Floricultura Flor-de-Liz</h2>
+        
         <!--Links-->
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="#cadastro">cadastro</a></li>
+            <li><a href="cadastro.html">cadastro</a></li>
             <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="#carrinho">Carrinho</a></li>
         </ul>
+
         <!--Icon-->
         <div class="header-icon">
             <i class='bx bx-cart-alt'></i>
@@ -159,21 +176,24 @@
             <input type="search" name="" placeholder="Buscar...">
         </div>
         </header>
-        
-<section class="row">
-    <div id="principal">
-          <img src="https://meulugar.quintoandar.com.br/wp-content/uploads/2022/07/pexels-duy-nguyen-5438011-850x680.jpg" width="300px" height="300px"  alt="flores"/>
-    </div>
-          <p class="p">A floricultura "Flor-de-Lis" foi criada recentemente em 2023, com o intuito de empreender e espalhar a paixão pelas plantas.
-        <br/> Ela conta com diversas espécies e também arranjos belíssimos para embelezar ainda mais suas mudinhas.</p>
-        
-    </section>
 
+<div id="home" class="principal"> 
+<section class="row">
+    <div class="pom">
+          <img src="https://meulugar.quintoandar.com.br/wp-content/uploads/2022/07/pexels-duy-nguyen-5438011-850x680.jpg" width="45%"  alt="flores"/>
+        </div>
+        <div class="text">
+          <h4 class="p">A floricultura "Flor-de-Liz" foi criada recentemente em 2023, com o intuito de empreender e espalhar a paixão pelas plantas.
+          Ela conta com diversas espécies e também arranjos belíssimos para embelezar ainda mais suas mudinhas.</h4>
+       <a herf="#" class="sm">Nossos Produtos</a>
+    </div>
+    </section>
+</div>
     <!--produtos-->
     <div class="produtos">
 
         <div class="box">
-        <img src="https://www.isabelaflores.com/media/catalog/product/a/l/alta-176-1.webp" width="200px" height="200px"/>
+        <img src="https://www.isabelaflores.com/media/catalog/product/a/l/alta-176-1.webp" width="30%"/>
         <h3>Flores</h3>
         <div class="content">
             <spam>R$30,00</spam>
@@ -182,7 +202,7 @@
         </div>
 
         <div class="box">
-        <img src="https://static.novaflor.com.br/images/product/29710gg.jpg?ims=750x750" width="200px" height="200px"/>
+        <img src="https://static.novaflor.com.br/images/product/29710gg.jpg?ims=750x750" width="30%"/>
         <h3>Buquê de Flores</h3>
         <div class="content">
             <spam>R$30,00</spam>
@@ -191,7 +211,7 @@
         </div>
 
         <div>
-        <img src="https://www.polenflor.com.br/media/catalog/product/cache/1/image/800x/17f82f742ffe127f42dca9de82fb58b1/i/m/img_2029_4.jpg" width="200px" height="200px"/> 
+        <img src="https://www.polenflor.com.br/media/catalog/product/cache/1/image/800x/17f82f742ffe127f42dca9de82fb58b1/i/m/img_2029_4.jpg" width="30%"/> 
         <h3>Buquê de Flores</h3>
         <div class="content">
             <spam>R$30,00</spam>
@@ -200,7 +220,7 @@
         </div>
 
         <div>
-        <img src="https://www.floragaucha.com.br/wp-content/uploads/2020/05/buque_rosas_no_cachepot1.jpg" width="200px" height="200px"/>
+        <img src="https://www.floragaucha.com.br/wp-content/uploads/2020/05/buque_rosas_no_cachepot1.jpg" width="30%"/>
         <h3>Buquê de Flores</h3>
         <div class="content">
             <spam>R$30,00</spam>
@@ -209,7 +229,7 @@
        </div>
 
        <div>
-        <img src="https://images.tcdn.com.br/img/img_prod/863188/buque_rosas_amarelas_117_1_1a5ff5c2759df34195ae9548c28bde1a.jpg" width="200px" height="200px"/>
+        <img src="https://images.tcdn.com.br/img/img_prod/863188/buque_rosas_amarelas_117_1_1a5ff5c2759df34195ae9548c28bde1a.jpg" width="30%"/>
         <h3>Buquê de Flores</h3>
         <div class="content">
             <spam>R$30,00</spam>
@@ -218,7 +238,7 @@
        </div>
 
        <div>
-        <img src="https://stack.flowermarket.com.br/saleteflores/images/produto/600_1441.jpg" width="200px" height="200px"/>
+        <img src="https://stack.flowermarket.com.br/saleteflores/images/produto/600_1441.jpg" width="30%"/>
         <h3>Buquê de Flores</h3>
         <div class="content">
             <spam>R$30,00</spam>
@@ -227,10 +247,15 @@
        </div> 
     </div>
         
-    </div>      
-</div>
+    </div> 
+    <div class="rodape">
 
-</div>
+        <p>fim</p>
+
+    </div>
+</div>      
+ 
+
 </body>
 </html>
  
