@@ -1,0 +1,68 @@
+*{
+    font-family: 'Anton', sans-serif;
+    color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(120,134,107);
+        
+    }
+ 
+    header
+    {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.5s linear;
+    }
+
+    .navbar
+    {
+    display: flex;
+    }
+
+    .navbar a
+    {
+    padding: 8px 17px;
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    }
+
+    .navbar a:hover
+    {
+    background: #385538;
+    border-radius: 0.2rem;
+    transform: 0.2 all linear;
+    }
+
+    .header-icon
+    {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+    }
+
+    .header-icon .bx
+    {
+    color: black;
+    }
+
+    .header-icon .bx:hover
+    {
+    color:black;
+    }
