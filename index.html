@@ -89,52 +89,7 @@
     .header-icon .bx:hover
     {
     color:black;
-    }
-
-    #menu-icon
-    {
-    color: var(--bg-color);
-    font-size: 24px;
-    z-index: 100001;
-    cursor: pointer;
-    display: none;
-    }
-
-    .search-box
-    {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%);
-    background: var(--bg-color);
-    width: 100%;
-    }
-    .search-box.active
-    {
-    top: 110%;
-    box-shadow: var(--box-shadow);
-    transition: 0.2s all linear;
-    }
-    .search-box input
-    {
-    padding: 20px;
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    
-    }
-
-    .search-box input::placeholder
-    {
-    font-size: 1rem;
-    font-weight: 500;
-    }
-    .principal{
-        margin-top: 120px;
-        border:none;
-    }
-    
+    }   
     
     .rodape
     {
@@ -236,6 +191,17 @@
         font-size: 1.8rem;
         text-transform: uppercase;
     }
+    .link
+    {
+        color: black;
+    }
+    .link:hover
+    {
+        background: #385538 ;
+        border-radius: 0.2rem;
+        transform: 0.2 all linear;
+        color:Black;
+    }
 
     </style>
 </head>
@@ -247,7 +213,7 @@
         
         <!--Links-->
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
+            
             <li><a href="login.html">Login</a></li>
             <li><a href="cadastro.html">cadastro</a></li>
             <li><a href="perfil.html">Perfil</a></li>
@@ -274,7 +240,7 @@
         <div class="text">
           <h4 class="p">A floricultura "Flor-de-Liz" foi criada recentemente em 2023, com o intuito de empreender e espalhar a paixão pelas plantas.
           Ela conta com diversas espécies e também arranjos belíssimos para embelezar ainda mais suas mudinhas.</h4>
-       <a href="produtos.html" class="sm">Nossos Produtos</a>
+       <a class="link" href="produtos.html">Nossos Produtos</a>
     </div>
     </section>
 

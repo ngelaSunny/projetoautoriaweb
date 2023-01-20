@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oregano:ital@1&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
     <title>Produtos</title>
 </head>
 <style>
@@ -33,6 +34,7 @@
     align-items: center;
     padding: 10px 15px;
     transition: 0.5s linear;
+
     }
 
     :root
@@ -46,7 +48,10 @@
     {
     display: flex;
     }
-
+    .header h2
+    {
+        background-color: #385538;
+    }
     .navbar a
     {
     padding: 8px 17px;
@@ -63,64 +68,6 @@
     transform: 0.2 all linear;
     }
 
-    .header-icon
-    {
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 10000;
-    display: flex;
-    column-gap: 0.8rem;
-    }
-
-    .header-icon .bx
-    {
-    color: black;
-    }
-
-    .header-icon .bx:hover
-    {
-    color:black;
-    }
-
-    #menu-icon
-    {
-    color: var(--bg-color);
-    font-size: 24px;
-    z-index: 100001;
-    cursor: pointer;
-    display: none;
-    }
-
-    .search-box
-    {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%);
-    background: var(--bg-color);
-    width: 100%;
-    }
-    .search-box.active
-    {
-    top: 110%;
-    box-shadow: var(--box-shadow);
-    transition: 0.2s all linear;
-    }
-    .search-box input
-    {
-    padding: 20px;
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    
-    }
-
-    .search-box input::placeholder
-    {
-    font-size: 1rem;
-    font-weight: 500;
-    }
 
     .produtos-container .box
     {
@@ -185,10 +132,26 @@
     }
     .produts 
     {
-        padding-top: 100px;
+        padding-top: 90px;
+    }
+    .box
+    {
+        width:25%;
+        float:left;
+        border:groove #385538;
+        
+    }
+    .inicio h1
+    {
+        text-align: center;
+    }
+    .box a:hover
+    {
+        background: #385538 ;
+        border-radius: 0.2rem;
+        transform: 0.2 all linear;
     }
     
-
 </style>
 <body>
 
@@ -198,30 +161,17 @@
         
         <!--Links-->
         <ul class="navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="cadastro.html">cadastro</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="#carrinho">Carrinho</a></li>
+            <li><a href="index.html">Voltar</a></li>
+
         </ul>
 
-        <!--Icon-->
-        <div class="header-icon">
-            <i class="bx bx-search-alt">
-            <box-icon name="search-alt"></box-icon>
-        </i>
-        </div>
-        <!--Search Box-->
-        <div class="search-box">
-            <input type="search" name="" placeholder="Buscar...">
-        </div>
         </header>
 
        <section class="produts">
            <div class="inicio">
 
-            <h2>Produtos</h2>
-
+            <h1>Nossos Produtos</h1>
+            <br/>
            </div>
 
            <div class="produtos-container">
@@ -231,7 +181,7 @@
                    <h3>Buquê</h3>
                    <div class="p">
                        <span>R$200,00</span>
-                       <a href="#">Carrinho</a>
+                       <a href="#">Ver</a>
                    </div>
                </div>
 
@@ -240,7 +190,7 @@
                 <h3>Buquê</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -249,7 +199,7 @@
                 <h3>Buquê</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -258,7 +208,7 @@
                 <h3>Buquê</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -267,7 +217,7 @@
                 <h3>Buquê</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -276,7 +226,7 @@
                 <h3>Buquê</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -285,7 +235,7 @@
                 <h3>Muda de Jiboia</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -294,7 +244,7 @@
                 <h3>Muda de Planta Medicinal</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -303,7 +253,7 @@
                 <h3>Muda de Pau-Brasil</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -312,7 +262,7 @@
                 <h3>muda de graviola</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -321,7 +271,7 @@
                 <h3>Muda de Alecrim</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -330,7 +280,7 @@
                 <h3>Cestas</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -339,7 +289,7 @@
                 <h3>Cestas</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -348,7 +298,7 @@
                 <h3>Cestas</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -357,7 +307,7 @@
                 <h3>Cestas</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
@@ -366,7 +316,7 @@
                 <h3>Cestas</h3>
                 <div class="p">
                     <span>R$200,00</span>
-                    <a href="#">Carrinho</a>
+                    <a href="#">Ver</a>
                 </div>
             </div>
 
