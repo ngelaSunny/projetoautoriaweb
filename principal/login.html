@@ -12,6 +12,7 @@
       color:#fff;
       text-align: left;
       margin-bottom:20px;
+      margin-top: 20px;
   }
   input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
    
@@ -87,8 +88,8 @@
       width: 160px;
       color: #fff;
       font-size: 1.2em;    
-      float: left;
-      text-align: center;
+      float:left;
+      text-align:right;
       padding: 15px 35px;
       border-radius: 60px;
       display: inline-block;
@@ -124,7 +125,7 @@
     color: #f00;
     font-style: normal;
   }
-  .todo{
+  body{
     background-color:rgba(120,134,107);
   }
   .style-form-input right{
@@ -133,10 +134,17 @@
   .style-form-input right{
     border-style: solid;
     border-color: #385538;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .btn-submit{
+    text-align:justify;
+  }
+  .link{
+    color: #fff;
   }
   </style>
   </head>
-  <body class="todo">
+  <body>
 
     <div class="row input-container">
     
@@ -155,7 +163,7 @@
      
           <div class="style-form-input full">
               <input type="hidden" name="acao" value="enviar">
-              <button class="btn-submit"> Entrar </button>
+              <button class="btn-submit"> <a class="link" href="perfil.html"> Entrar</a></button>
         
           </div>
       </form>
