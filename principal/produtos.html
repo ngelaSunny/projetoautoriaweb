@@ -76,95 +76,7 @@
     background: #385538 ;
     border-radius: 0.2rem;
     transform: 0.2 all linear;
-    }
-
-
-    .produtos-container .box
-    {
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
-    }
-
-    .produtos-container img
-    {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    object-position: center;
-    padding: 20px;
-    background: #385538;
-    border-radius: 0.5rem;
-    }
-
-    .produtos-container .box h3
-    {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0.5rem 0 0.5rem;
-    }
-
-    .produtos-container .box content
-    {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    }
-
-    .produtos-container .box .content span
-    {
-    padding: 0 1rem;
-    color: black;
-    background: #385538;
-    border-radius: 4px;
-    font-weight: 500;
-    }
-
-    .produtos-container .box .content a
-    {
-    padding: 0 1rem;
-    color: black;
-    border: 2px solid #385538;
-    border-radius: 4px;
-    text-transform: uppercase;
-    }
-
-    .produtos-container .box .content a:hover
-    {
-    background: #385538;
-    color: black;
-    transition: 0.2s all linear;
-    }
-    .produts 
-    {
-        padding-top: 90px;
-    }
-    .box
-    {
-        width:33%;
-        float:left;
-        border:groove #385538;
-        
-    }
-    .inicio h1
-    {
-        text-align: center;
-    }
-    .box a:hover
-    {
-        background: #385538 ;
-        border-radius: 0.2rem;
-        transform: 0.2 all linear;
-    }
-
-
-    
-    
+    }   
     
 </style>
 <body>
@@ -184,173 +96,34 @@
 
         <div class="wrapper">
             <div id="search-container">
-              <input
-                type="search"
-                id="search-input"
-                placeholder="Search product name here.."
-              />
+              <input type="search" id="search-input" placeholder="Pesquise por nossos produtos aqui..."/>
+
               <button id="search">Buscar...</button>
             </div>
-            <div id="buttons">
+
+            <div class="filtro" id="buttons">
               <button class="button-value" onclick="filterProduct('all')">Tudo</button>
 
               <button class="button-value" onclick="filterProduct('buque')">Buques</button>
 
               <button class="button-value" onclick="filterProduct('muda')">Mudas</button>
               
-              <button class="button-value" onclick="filterProduct('cesta')">Cestas</button>
-              
+              <button class="button-value" onclick="filterProduct('cesta')">Cestas</button>   
             </div>
 
-            <div id="products">
-                
-            </div>
+            <br/>
+            <h1>Nossos Produtos</h1>
+            <br/>
+
+            <div id="products"></div>
+
           </div>
-          <!-- Script -->
+          <!-- JavaScript -->
           <script src="funcionalidade.js"></script>
 
 
 
-       <section class="produts">
-           <div class="inicio">
-
-            <h1>Nossos Produtos</h1>
-            <br/>
-           </div>
-
-           <div class="produtos-container">
-
-               <div class="box">
-                   <img src="https://www.isabelaflores.com/media/catalog/product/a/l/alta-176-1.webp">
-                   <h3>Buquê</h3>
-                   <div class="p">
-                       <span>R$200,00</span>
-                       <a href="/produtos/buque1.html" >Ver</a>
-                   </div>
-               </div>
-
-               <div class="box">
-                <img src="https://static.novaflor.com.br/images/product/29710gg.jpg?ims=750x750">
-                <h3>Buquê</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/buque2.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://www.polenflor.com.br/media/catalog/product/cache/1/image/800x/17f82f742ffe127f42dca9de82fb58b1/i/m/img_2029_4.jpg">
-                <h3>Buquê</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/buque3.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://www.floragaucha.com.br/wp-content/uploads/2020/05/buque_rosas_no_cachepot1.jpg">
-                <h3>Buquê</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/buque4.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://images.tcdn.com.br/img/img_prod/863188/buque_rosas_amarelas_117_1_1a5ff5c2759df34195ae9548c28bde1a.jpg">
-                <h3>Buquê</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/buque5.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://stack.flowermarket.com.br/saleteflores/images/produto/600_1441.jpg">
-                <h3>Buquê</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/buque6.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://i0.wp.com/floresdelivery.com.br/wp-content/uploads/2017/05/fotos-floricutura-36.jpg?fit=1001%2C1000&ssl=1">
-                <h3>Muda de Jiboia</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/muda1.html" >Ver</a>
-                </div>
-            </div>
-
-    
-
-            <div class="box">
-                <img src="https://brasilnativas.com.br/wp-content/uploads/2021/04/muda_de_pau_brasil_feita_por_semente_9680_3_20190521161357-600x600.jpg">
-                <h3>Muda de Pau-Brasil</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/muda3.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://brasilnativas.com.br/wp-content/uploads/2020/12/Mudas_graviola-600x600.png">
-                <h3>muda de graviola</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/muda4.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://img.irroba.com.br/fit-in/600x600/filters:format(webp):fill(fff):quality(95)/bellasce/catalog/dia-dos-namorados/cesta-site-7.jpg">
-                <h3>Cesta personalizada</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/cesta1.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://stack.flowermarket.com.br/eliteflores/images/produto/600_2206.jpg">
-                <h3>Cesta personalizada</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/cesta2.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://cdn.dooca.store/8052/products/bxqdodg96024ho2jq1sun02irugsqpdmt69p_640x640+fill_ffffff.png?v=1651170887&webp=0">
-                <h3>Cesta personalizada</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/cesta3.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://centraldasflores.com.br/pub/media/catalog/product/cache/9d08971813a040f8f96067a40f75c615/c/e/cesta_flores_mistas.png">
-                <h3>Cesta personalizada</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/cesta4.html" >Ver</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://cdn.awsli.com.br/1000x1000/1161/1161453/produto/43608439/df46c7569c.jpg">
-                <h3>Cesta personalizada</h3>
-                <div class="p">
-                    <span>R$200,00</span>
-                    <a href="/produtos/cesta5.html" >Ver</a>
-                </div>
-            </div>
-
-
-           </div>
-       </section> 
+       
         
 </body>
 </html>

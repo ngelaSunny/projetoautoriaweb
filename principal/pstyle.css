@@ -2,13 +2,17 @@
     width: 95%;
     margin: 0 auto;
     padding-top: 50px;
+    
   }
   #search-container {
     margin: 1em 0;
+    text-align: right;
+    padding-right: 45px;
+
   }
   #search-container input {
     background-color: #385538;
-    width: 70%;
+    width: 80%;
     border-bottom: 2px solid black;
     padding: 1em 0.3em;
   }
@@ -23,6 +27,12 @@
     border-radius: 5px;
     margin-top: 0.5em;
   }
+  .filtro
+  {
+    text-align: right;
+    padding-right: 45px;
+  }
+  
   .button-value {
     border: 2px solid #385538;
     padding: 1em 2.2em;
@@ -34,6 +44,7 @@
   .active {
     background-color: #385538;
     color: black;
+    
   }
   #products {
     display: grid;
@@ -53,7 +64,7 @@
     text-align: center;
   }
   img {
-    max-width: 100%;
+    max-width: 95%;
     object-fit: contain;
     height: 15em;
   }
