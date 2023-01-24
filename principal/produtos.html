@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oregano:ital@1&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="pstyle.css" />
+    
+    
     <title>Produtos</title>
 </head>
 <style>
@@ -151,6 +161,8 @@
         border-radius: 0.2rem;
         transform: 0.2 all linear;
     }
+
+
     
     
     
@@ -168,6 +180,36 @@
         <h2>Floricultura Flor-de-Lis</h2>
 
         </header>
+
+
+        <div class="wrapper">
+            <div id="search-container">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search product name here.."
+              />
+              <button id="search">Buscar...</button>
+            </div>
+            <div id="buttons">
+              <button class="button-value" onclick="filterProduct('all')">Tudo</button>
+
+              <button class="button-value" onclick="filterProduct('buque')">Buques</button>
+
+              <button class="button-value" onclick="filterProduct('muda')">Mudas</button>
+              
+              <button class="button-value" onclick="filterProduct('cesta')">Cestas</button>
+              
+            </div>
+
+            <div id="products">
+                
+            </div>
+          </div>
+          <!-- Script -->
+          <script src="funcionalidade.js"></script>
+
+
 
        <section class="produts">
            <div class="inicio">

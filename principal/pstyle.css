@@ -1,0 +1,86 @@
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: #385538;
+    width: 70%;
+    border-bottom: 2px solid black;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border-bottom-color: #385538;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #385538;
+    color: black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
+  .button-value {
+    border: 2px solid #385538;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: Black;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #385538;
+    color: black;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1.1em;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: #385538;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1px;
+    box-shadow: 1em 2em 2.5em black;
+  }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container {
+    padding-top: 1em;
+    color: co;
+  }
+  .container h5 {
+    font-weight: 650;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+
+  

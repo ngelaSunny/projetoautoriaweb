@@ -94,7 +94,7 @@
       
     button {
         --primary-color: black;
-        --hovered-color: darkseagreen ;
+        --hovered-color: #385538 ;
         position: relative;
         
         font-weight: 600;
