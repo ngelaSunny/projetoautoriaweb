@@ -63,10 +63,13 @@
 
 /* SUBMIT */
 
-.submit { width:100%; float:center; }
+.submit { width:100%; float:center; 
+    margin-left: 45px;
+}
 
 .submit_btn {
 
+    
     float: left;
     display: block;
     padding: 5px 30px;
@@ -294,41 +297,8 @@
             
             <div class="form_grupo">
                 <label for="numero" class="form_label">Telefone</label>
-                <input type="number" name="numero" class="form_input" id="numero" placeholder="Telefone" required>
+                <input type="tel" name="numero" class="form_input" id="numero" placeholder="Telefone" required>
             </div>        
-
-            <div class="form_grupo">
-                
-                <label for="estadocivil" class="text">Estado civil</label>
-                <select name="estadocivil" class="dropdown" required>
-                    
-                    <option selected disabled class="form_select_option" value="">Selecione</option>
-                    <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
-                    <option value="Casado" class="form_select_option">Casado(a) </option>
-                    <option value="Divorciado" class="form_select_option">Divorciado(a)</option>                    
-                    <option value="Viúvo" class="form_select_option">Viúvo(a)</option>                    
-                
-                </select>
-
-            </div>
-
-            <div class="form_grupo">
-
-                <span class="legenda">Sexo:</span>
-                
-                <div class="radio-btn">
-                    <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
-                    <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
-                </div>
-
-                <div class="radio-btn">
-                    <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
-                    <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
-                </div>
-
-            </div>
-                
-
 
                 <div class="submit">
 
