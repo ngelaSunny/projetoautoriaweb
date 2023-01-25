@@ -12,19 +12,28 @@
 <style>
     *
     {
-        background-color: rgba(120,134,107);
-        font-family: 'anton'; 
+    font-family: 'Anton', sans-serif;
+    color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(120,134,107);
     }
     .container_form {
 
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     background:#385538; 
     box-shadow: 1px 0px 1.2px 0px #385538; 
     border-radius:3px; 
     padding:1em;
+    padding-top: 80px;
     }
 
     .container_form h1 {
@@ -32,9 +41,7 @@
     font-family:'open_sansregular';
     font-size: 2.3em;
     color: black;
-    border-bottom: 1px #385538 solid;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    text-align: center;
 
 }
 
@@ -56,7 +63,7 @@
 
 /* SUBMIT */
 
-.submit { width:100%; float:left; }
+.submit { width:100%; float:center; }
 
 .submit_btn {
 
@@ -197,26 +204,67 @@
 
 }
 
-.form_message,
-.form_message .message_input {
-
+    header
+    {
+    position: fixed;
     width: 100%;
-    float:left;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.5s linear;
 
-}
+    }
 
-.form_message_label {
-
-    width: 100%;
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: bold;
+    :root
+    {
     
-}
+    /*Box Sandow*/
+    --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+    }
+
+    .navbar
+    {
+    display: flex;
+    }
+    .header h2
+    {
+        background-color: #385538;
+    }
+    .navbar a
+    {
+    padding: 8px 17px;
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    }
+
+    .navbar a:hover
+    {
+    background: #385538 ;
+    border-radius: 0.2rem;
+    transform: 0.2 all linear;
+    }   
 
 </style>
 <body>
+
+    <header>
+        
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="index.html">Voltar</a></li>
+
+        </ul>
+
+        <h2>Floricultura Flor-de-Lis</h2>
+
+        </header>
+
 
     <div class="container_form">
 
@@ -271,12 +319,6 @@
             </div>
                 
 
-                <div class="form_message">
-                    
-                    <label for="message" class="form_message_label"> Digite aqui sua sua mensagem:</label>
-                    <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
-
-                </div>
 
                 <div class="submit">
 
