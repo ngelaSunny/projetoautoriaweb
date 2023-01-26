@@ -1,13 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Floricultura</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oregano:ital@1&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="Página Inicial/img/favicon-16x16.png" type="image/x-icon">
+
 </head>
     
     <style type="text/css">
@@ -144,6 +149,153 @@
     {
         text-align: center;
     }
+
+    @media (max-width: 1058px)
+{
+    header
+    {
+        padding: 16px 60px;
+    }
+
+    section
+    {
+        padding: 50px 60px;
+    }
+
+    .home-text h1 
+    {
+        font-size: 2.4rem;
+    }
+    .menu-icon
+    {
+        visibility:hidden;
+    }
+}
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 16px 4%;
+    }
+
+    section
+    {
+        padding: 50px 4%;
+    }
+
+    .home-text h1 
+    {
+        font-size: 2rem;
+    }
+    .menu-icon
+    {
+        visibility:hidden;
+        
+    }
+}
+
+@media (max-width: 768px)
+{
+    header 
+    {
+        padding: 12px 4%;
+    }
+
+    .menu-icon
+    {
+        display: initial;
+    }
+
+    .navbar
+    {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: rgba(120,134,107);
+        row-gap: 1.4rem;
+        padding: 20px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    
+    .navbar a 
+    {
+        color: black;
+    }
+
+    .navbar a:hover 
+    {
+        color: black;
+    }
+
+    .navbar.active 
+    {
+        top: 100%;
+    }
+
+    .about
+    {
+        align-items: right;
+    }
+    .menu-icon
+    {
+        visibility:hidden;
+    }
+}
+
+@media (max-width: 360px)
+{
+    header
+    {
+        padding: 11px 4%;
+    }
+
+    .home-text
+    {
+        padding-top: 15px;
+    }
+
+    .home-text h1 
+    {
+        font-size: 1.4rem;
+    }
+
+    .home-text p 
+    {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .about-text
+    {
+        text-align: center;
+    }
+
+    .about-text h2 
+    {
+        font-size: 1.2rem;
+    }
+
+    .heading h2
+    {
+        font-size: 1.2rem;
+    }
+
+
+    }
+
+    .menu-icon
+    {
+    color: black;
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+    }
    
     </style>
 
@@ -152,6 +304,8 @@
     <header>
     
             <h2>Floricultura Flor-de-Lis</h2>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
         
         <!--Links-->
         <ul class="navbar">
@@ -167,9 +321,8 @@
 
  <div class="princ">
 <section class="row">
-    <div class="pom">
+    
           <img src="https://meulugar.quintoandar.com.br/wp-content/uploads/2022/07/pexels-duy-nguyen-5438011-850x680.jpg" width="450px"  alt="flores"/>
-        </div>
         
         <div class="text">
             <br/>
@@ -220,14 +373,14 @@
     <br/>
       <h6>Twitter: <p>@floresflordelis</p> </h6> 
       <h6>Instagram: <p>@flordelisfloricultura</p> </h6>
-       <h6>Whatsapp: <p>99109-4543</p> </h6> 
+       <h6>Whatsapp: <p>(84) 9 9109-4543</p> </h6>  
         
 
 
     </div>
 </div>      
  
-
+ <script src="javascript.js"></script>
 </body>
 </html>
  
