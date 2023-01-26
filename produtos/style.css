@@ -73,12 +73,13 @@
     .img-p img
     {
         float: left;
-        width: 40%;
+        width: 50%;
     }
     .text
     {
         grid-row: 30px;
         text-align: center;
+        float: right;
     }
     
     
@@ -145,3 +146,5 @@
   {
     padding: 45px;
   }
+
+  
