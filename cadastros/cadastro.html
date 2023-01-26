@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oregano:ital@1&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <title>Cadastro</title>
+</head>
+<style>
+    *
+    {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(120,134,107);
+    }
+    .container_form {
+
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    background:#385538; 
+    box-shadow: 1px 0px 1.2px 0px #385538; 
+    border-radius:3px; 
+    padding:1em;
+    padding-top: 80px;
+    }
+
+    .container_form h1 {
+    
+    font-family:'open_sansregular';
+    font-size: 2.3em;
+    color: black;
+    text-align: center;
+
+}
+
+.form_grupo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form_grupo .legenda { 
+
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* SUBMIT */
+
+.submit { width:100%; float:center; 
+    margin-left: 45px;
+}
+
+.submit_btn {
+
+    
+    float: left;
+    display: block;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color:#385538;
+    color: black;
+    text-shadow: 0 0 5px #385538;
+    font-family: inherit;
+    font-size: 25px;
+    font-family:'open_sansregular';
+    border-radius: 6px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit_btn:hover {
+
+    background-color: #385538;
+    transform: scale(1.03);
+
+}
+
+.dropdown {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: inherit;
+    color: black;
+    border-radius: 4px;
+    border: 1px #385538 solid;
+    background:#385538;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.form_new_input {
+    display: none;
+}
+
+.radio_label,
+.check_label {
+
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+    cursor: pointer;
+    margin-bottom: 8px;
+
+}
+
+
+.radio_new_btn {
+
+    position: absolute;
+    left: 0;
+    transform: translateY(3px);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0.2em solid black;
+
+}
+
+.radio_new_btn::after {
+
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    visibility: hidden;
+
+}
+
+.check_new_btn {
+
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 0.2em solid black;
+
+}
+
+.check_new_btn::after {
+
+    content: "";
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    visibility: hidden;
+
+}
+
+.form_new_input:checked ~ .radio_label .radio_new_btn::after,
+.form_new_input:checked ~ .check_label .check_new_btn::after {
+ 
+    visibility: visible;
+}
+
+.form_new_input:checked ~ .radio_label,
+.form_new_input:checked ~ .check_label {
+    color: #385538;
+}
+
+
+.form_grupo {
+   
+    position: relative;
+
+}
+
+.form_input {
+
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px #385538 solid;
+    background: #385538;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+
+}
+
+    header
+    {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.5s linear;
+
+    }
+
+    :root
+    {
+    
+    /*Box Sandow*/
+    --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+    }
+
+    .navbar
+    {
+    display: flex;
+    }
+    .header h2
+    {
+        background-color: #385538;
+    }
+    .navbar a
+    {
+    padding: 8px 17px;
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    }
+
+    .navbar a:hover
+    {
+    background: #385538 ;
+    border-radius: 0.2rem;
+    transform: 0.2 all linear;
+    }
+    .link{
+        color:black;
+        background-color:#385538 ;
+    }   
+
+</style>
+<body>
+
+    <header>
+
+        <h2>Floricultura Flor-de-Lis</h2>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <!--Links-->
+        <ul class="navbar">
+            
+            <li><a href="../cadastros/cadastro.html">Cadastro</a></li>
+            <li><a href="../cadastros/produtos.cadastrados.html">Produtos Cadastrados</a></li>
+            <li><a href="../cadastros/compras.html">Compras Cadastradas</a></li>
+            <li><a href="../principal/index.html">Home</a></li>
+        </ul>
+
+
+        </header>
+
+
+    <div class="container_form">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <form class="form" action="#" method="post">
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="e-mail" class="form_label">Email</label>
+                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="datanascimento" class="form_label">Data de Nascimento</label>
+                <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+            </div>  
+            
+            <div class="form_grupo">
+                <label for="endereço" class="form_label">Endereço</label>
+                <input type="text" name="endereço" class="form_input" id="endereço" placeholder="Endereço" required>
+            </div> 
+            
+            <div class="form_grupo">
+                <label for="numero" class="form_label">Telefone</label>
+                <input type="tel" name="numero" class="form_input" id="numero" placeholder="Telefone" required>
+            </div>        
+
+                <div class="submit">
+
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn" ><a class="link" href="perfil.html">Cadastrar</a></button>
+                
+                </div>
+        </form>
+
+
+<!--container_form-->
+
+</body>
+</html>

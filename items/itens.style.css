@@ -1,97 +1,143 @@
-#products {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 1.1em;
-    padding: 2em 0;
-  }
-
-
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 50px;
   
-  @media screen and (max-width: 720px) {
-    img {
-      max-width: 100%;
-      object-fit: contain;
-      height: 10em;
-    }
-    .card {
-      max-width: 10em;
-      margin-top: 1em;
-    }
-    #products {
-      grid-template-columns: auto auto;
-      grid-column-gap: 1em;
-    }
-  }
-.produtos
-{
-    padding-top: 50px;
 }
-  .produtos-container
+#search-container {
+  margin: 1em 0;
+  text-align: right;
+  padding-right: 45px;
+
+}
+#search-container input {
+  background-color: #385538;
+  width: 80%;
+  border-bottom: 2px solid black;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #385538;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #385538;
+  color: black;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+.filtro
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    gap: 1.5rem;
-    margin-top: 2rem;
+  text-align: right;
+  padding-right: 45px;
+}
+
+.button-value {
+  border: 2px solid #385538;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: Black;
+  cursor: pointer;
+}
+.active {
+  background-color: #385538;
+  color: black;
+  
+}
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1.1em;
+  padding: 2em 0;
+}
+
+
+
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+
+.produtos-container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .produtos-container .box
 {
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
 }
 
 .produtos-container img
 {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    object-position: center;
-    padding: 20px;
-    background: #f1f1f1;
-    border-radius: 0.5rem;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 0.5rem;
 }
 
 .produtos-container .box h3
 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0.5rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .produtos-container .box content
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .produtos-container .box .content span
 {
-    padding: 0 1rem;
-    color: var(--bg-color);
-    background: var(--main-color);
-    border-radius: 4px;
-    font-weight: 500;
+  padding: 0 1rem;
+  color: var(--bg-color);
+  background: var(--main-color);
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 .produtos-container .box .content a
 {
-    padding: 0 1rem;
-    color: var(--text-color);
-    border: 2px solid var(--main-color);
-    border-radius: 4px;
-    text-transform: uppercase;
+  padding: 0 1rem;
+  color: var(--text-color);
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .produtos-container .box .content a:hover
 {
-    background: var(--main-color);
-    color: var(--bg-color);
-    transition: 0.2s all linear;
+  background: var(--main-color);
+  color: var(--bg-color);
+  transition: 0.2s all linear;
 }
+

@@ -32,13 +32,6 @@
         
     }
 
-    :root
-    {
-    --main-color:darkseagreen;
-    --second-color:#385538;
-    --text-color:black;
-    --bg-color:#fff;
-    }
  
 
     header
@@ -64,11 +57,14 @@
 
     .navbar a
     {
-    padding: 1px 9px;
+    padding: 5px 16px;
     color: black;
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 17px;
+    float:center;
+    text-align: center;
+    text-decoration: none;
 
     }
 
@@ -77,6 +73,14 @@
     background: #385538;
     border-radius: 0.2rem;
     transform: 0.2 all linear;
+    }
+
+    .menu-icon
+    {
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
     }
  
     
@@ -149,6 +153,28 @@
     {
         text-align: center;
     }
+    @media (max-width: 100%)
+{
+    header
+    {
+        padding: 16px 60px;
+    }
+
+    section
+    {
+        padding: 50px 60px;
+    }
+
+    .home-text h1 
+    {
+        font-size: 2.4rem;
+    }
+    #menu-icon
+    {
+        visibility:hidden;
+    }
+}
+
 
     @media (max-width: 1058px)
 {
@@ -166,7 +192,7 @@
     {
         font-size: 2.4rem;
     }
-    .menu-icon
+    #menu-icon
     {
         visibility:hidden;
     }
@@ -188,7 +214,7 @@
     {
         font-size: 2rem;
     }
-    .menu-icon
+    #menu-icon
     {
         visibility:hidden;
         
@@ -241,9 +267,9 @@
     {
         align-items: right;
     }
-    .menu-icon
+    #menu-icon
     {
-        visibility:hidden;
+        visibility:visible;
     }
 }
 
@@ -286,16 +312,13 @@
     }
 
 
+    #menu-icon
+    {
+        visibility:visible;
     }
 
-    .menu-icon
-    {
-    color: black;
-    font-size: 24px;
-    z-index: 100001;
-    cursor: pointer;
-    display: none;
     }
+
    
     </style>
 
@@ -311,10 +334,9 @@
         <ul class="navbar">
             
             <li><a href="login.html">Login</a></li>
-            <li><a href="cadastro.html">cadastro</a></li>
+            <li><a href="../cadastros/cadastro.html">Cadastros</a></li>
             <li><a href="perfil.html">Perfil</a></li>
             <li><a href="carrinho  copy.html">Carrinho</a></li>
-            <li><a href="compras.html">Compras cadastradas</a></li>
         </ul>
 
         </header>
@@ -362,7 +384,6 @@
         </div>
         
     </div> 
-
     
         
     </div> 
