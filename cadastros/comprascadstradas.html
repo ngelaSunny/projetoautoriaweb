@@ -15,7 +15,7 @@
     }
     .texto{
       background-color:darkseagreen;
-      
+     
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .container-fluid{
@@ -27,7 +27,7 @@
      font-family:Arial, Helvetica, sans-serif;
      text-align: left;
     }
-    .titulo{
+    h1{
       font-style:normal;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       text-align:left;
@@ -45,38 +45,46 @@
     }
     .tabela{
       background-color:darkseagreen;
+      margin-top:6px;
+    }
+    h5{
+        background-color: rgba(120,134,107);
+        font-style: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     </style>
   </head>
   <body class="todo">
    <div class="container-fluid">
-   <h1 class="titulo">Compras cadastradas</h1>
-   <div class="tabela>
-       <h5> Itens recém  comprados:</h5>
-       <table class="table" width="500" border="10px">
-         <tr class="texto">
-           <td class="titulos"> Produto</td>
+    <div class="titulo">
+        <h1>Compras cadastradas</h1>
+        <h5> Itens recém  comprados:</h5>
+    </div>
+   <div class="tabela">
+       <table class="table" width="400" border="20">
+         <tr>
+           <th> Produto</th>
            <td> Buquê de rosas </td>
            <td> Muda de Pau-Brasil </td>
            <td> Cesta personalizada </td>
          </tr>
-         <tr class="texto">
-           <td class="titulos"> Quantidade </td>
+         <tr>
+           <th> Quantidade </th>
            <td> 1 </td>
            <td> 4 </td>
            <td> 1 </td>
           </tr>
-          <tr class="texto">
-            <td class="titulos"> Valor </td>
-            <td> R$ 200 </td>
-            <td> R$ 200 </td>
-            <td> R$ 200 </td>
+          <tr>
+            <th> Valor </th>
+            <td> R$200,00 </td>
+            <td> R$200,00 </td>
+            <td> R$200,00</td>
           </tr>
-          <tr class="texto">
-            <td class="titulos"> Descrição </td>
-            <td> Buquê de rosas amarelas, de perfume exuberante e recém colhitas.</td>
+          <tr>
+            <th> Descrição </th>
+            <td> Buquê de rosas amarelas, de perfume exuberante e recém colhidas.</td>
             <td> Muda de Pau-Brasil de 3 meses de plantio, com tronco fino e de coloração cinza-escura.</td>
-            <td> Cestas personalizadas para o dia dos namorados ou aniversários. Conta com rosas de sua preferência e deliciosos chocolates.</td>
+            <td> Cestas personalizadas para o dia dos namorados ou aniversários. <br/>Conta com rosas de sua preferência e deliciosos chocolates.</td>
           </tr>
        </table>
        
