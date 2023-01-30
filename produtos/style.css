@@ -48,24 +48,6 @@
     transform: 0.2 all linear;
     }
 
-    .header-icon
-    {
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 10000;
-    display: flex;
-    column-gap: 0.8rem;
-    }
-
-    .header-icon .bx
-    {
-    color: black;
-    }
-
-    .header-icon .bx:hover
-    {
-    color:black;
-    }
     .principal
     {
         padding-top: 100px;
@@ -73,13 +55,13 @@
     .img-p img
     {
         float: left;
-        width: 50%;
+        width: 35%;
     }
     .text
     {
         grid-row: 30px;
         text-align: center;
-        float: right;
+        
     }
     
     
